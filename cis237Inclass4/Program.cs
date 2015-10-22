@@ -61,6 +61,29 @@ namespace cis237Inclass4
 
             Console.WriteLine();
 
+            Console.WriteLine("".PadRight(Console.WindowWidth - 1, '*'));
+            Console.WriteLine();
+
+            // Behaves exactly like previous one since it takes in a string.
+            GenericLinkedList<string> myGenericStringLinkedList = new GenericLinkedList<string>();
+
+            // More examples of generic linked lists. One is of type int, the other is of type object.
+            GenericLinkedList<int> myGenericIntLinkedList = new GenericLinkedList<int>();
+            GenericLinkedList<object> myGenericObjectLinkedList = new GenericLinkedList<object>();
+
+
+            // Use generic version of string to do similar work to above.
+            myGenericStringLinkedList.Add("First");
+            myGenericStringLinkedList.Add("Second");
+            myGenericStringLinkedList.Add("Third");
+            myGenericStringLinkedList.Add("Fourth");
+
+            for (GenericNode<string> x = myGenericStringLinkedList.Head; x != null; x = x.Next)
+            {
+                Console.WriteLine(x.Data);
+            }
+
+            Console.WriteLine();
         }
     }
 }

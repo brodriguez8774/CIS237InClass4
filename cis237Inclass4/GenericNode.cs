@@ -6,23 +6,18 @@ using System.Threading.Tasks;
 
 namespace cis237Inclass4
 {
-    class Node
+    class GenericNode<T>
     {
-        #region properties
-
-        public Node Next
+        public GenericNode<T> Next
         {
             set;
             get;
         }
 
-        public string Data
+        public T Data
         {
             set;
             get;
         }
-
-        #endregion
-
     }
 }

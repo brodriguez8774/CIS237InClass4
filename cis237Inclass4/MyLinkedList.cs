@@ -36,8 +36,8 @@ namespace cis237Inclass4
         // Public property that points to head node (first node in list).
         public Node Head
         {
-            get;
             set;
+            get;
         }
 
         #endregion
